@@ -2,6 +2,7 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*--HEADER--*/
@@ -11,74 +12,125 @@
 header{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-    margin: 0 auto;
+    background-color: #0C0020;
+    margin: 0;
+    padding: 5px 5%;
 }
 
 
 /*barra de navegação*/
 nav{
-    background-color: rgb(209, 123, 255);
     display: flex;
     align-items: center; /*alinhamento vertical*/
     justify-content: space-between;
     flex-wrap: wrap;
-    border-radius: 20px;
-    margin: 10px 5%;
-    padding: 0% 2%;
+    padding: 0px 2% ;
 }
 
 /*div com a logo do site (link para a LP na barra de navegação*/
 .logo{
-background-color: beige;
-padding: 5px;
+    display: flex;
+    padding: 8px 0 0 0;
+    margin-left: 1%;
+    border-bottom: 1px solid #7fff00;
 }
 
-.logo a{
-margin: 0px;
-text-decoration:none
+.logo img{
+    height: 55px;
+}
+
+.logo:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
 }
 
 /*div com os links da barra de navegação*/
 .nav-links{
-display: flex;
-flex-direction: row;
-justify-content: end;
-gap: 7%;
-flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 3%;
+    flex: 1;
 }
 
 .nav-links a{
-text-decoration: none;
+    text-decoration: none;
+    padding: 5px 1%;
+    border-radius: 100px;
+    color: #F1F9DD;
+}
+
+.nav-links a:hover {
+    background-color: #7fff00;
+    color: #0C0020;
+    transition: 0.5s;
+    transform: scale(1.01);
 }
 
 /*-Landing Page-*/
 
 /*section com os elementos do header que ficam fora da barra nav (Landing Page)*/
 .headerLP-section{
-    background-color: #4343f9;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5px 5%;
+    margin-bottom: 0px;
 }
 
 /*div que contém o heading*/
 .txt-header{
-    background-color: chartreuse;
     flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
     min-width: 160px;
     max-width: 525px;
     text-align: justify;
+    justify-content: space-evenly;
+    padding: 0 3%;
+}
+
+.txt-header h1{
+    color: #F1F9DD;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.txt-header p{
+    color: #F1F9DD;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.CTA{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 15px 5%;
+    background-color: #7fff00;
+    border-radius: 25px;
+    color: #000000;
+    text-align: center;
+    margin: 3% 20%;
+    min-width: 235px;
+    
+}
+
+.CTA:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    background-color: #c3ff87;
 }
 
 /*div que contém a imagem do header*/
 .img-header{
-    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 300px;
+    max-width: 50%;
+    min-width: 310px;
     flex: 1px 1px 300px;
 }
 
@@ -101,7 +153,7 @@ text-decoration: none;
 
 /*div que contém a barra de pesquisa (tag input)*/
 .pesquisa{
-    background-color: chartreuse;
+    background-color: #7fff00;
 }
 
 /*--MAIN--*/
@@ -111,7 +163,7 @@ text-decoration: none;
 main{
     display: flex;
     flex-direction: column;
-    background-color: chocolate;
+    background-color: #F1F9DD;
     margin: 0px;
     padding: 5px 5%;
 }
@@ -145,8 +197,8 @@ main article {
 }
 
 .produto {
-max-width: 50%;
-padding: 10px;
+    max-width: 50%;
+    padding: 10px;
 }
 
 /*--FOOTER--*/
