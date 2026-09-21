@@ -377,6 +377,25 @@ border-radius: 15px;
     background-color: #b8d39c;
 }
 
+/*-Suporte-*/
+.suporte{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.suporte form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.suporte form input{
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #cbcbd7;
+}
+
 /*--FOOTER--*/
 
 /*-Default-*/
