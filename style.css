@@ -144,7 +144,6 @@ nav{
 
 /*section com os elementos do header que ficam fora da barra nav (página explorar)*/
 .headerEXP-section{
-    background-color: #4343f9;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -153,7 +152,18 @@ nav{
 
 /*div que contém a barra de pesquisa (tag input)*/
 .pesquisa{
-    background-color: #7fff00;
+padding: 7px 0px;
+width: 50%;
+}
+
+.pesquisa input{
+background-color: #F1F9DD;
+color: #0C0020;
+padding: 0% 1%;
+height: 35px;
+width: 100%;
+border-radius: 15px;
+border: 2px solid #72b900;
 }
 
 /*--MAIN--*/
@@ -165,15 +175,10 @@ main{
     flex-direction: column;
     background-color: #F1F9DD;
     margin: 0px;
-    padding: 5px 5%;
-}
-
-main div{
-    background-color: chartreuse ;
+    padding: 46px 13%;
 }
 
 main article {
-    background-color: aquamarine;
     margin: 10px 0;
 }
 
@@ -182,7 +187,108 @@ main article {
 .mainLP-section {
     display: flex;
     flex-direction: column;
-    background-color: bisque;
+    gap: 40px;
+}
+
+.mainLP-article {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.mainLP-article h2{
+    font-size: 40px;
+}
+
+.mainLP-article h3{
+    font-size: 30px;
+    color: #0C0020;
+}
+.mainLP-article p{
+    font-size: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.cardsv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8FC700;
+    width: 20%;
+    height: 220px;
+    padding: 2%;
+    border-radius: 40px;
+    min-width: 282px;
+}
+
+.cardsv h1{
+    color: #0C0020;
+    background-color: #F1F9DD;
+    padding: 2% 7%;
+    border-radius: 20px;
+}
+
+.cardsv h2{
+    color: #0C0020;
+    padding: 2% 7%;
+}
+
+.cardsv p{
+    background-color: #72b900;
+    color: #0C0020;
+    padding: 10% 7%;
+    border-radius: 25px;
+    max-height: 312px;
+}
+
+.cardsv:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.cardsr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0C0020;
+    width: 20%;
+    height: 220px;
+    padding: 2%;
+    border-radius: 40px;
+    min-width: 282px;
+}
+
+.cardsr h1{
+    color: #F1F9DD;
+    background-color: #3e3e64;
+    padding: 2% 7%;
+    border-radius: 20px;
+}
+
+.cardsr h2{
+    color: #F1F9DD;
+    padding: 2% 7%;
+}
+
+.cardsr p{
+    background-color: #060011;
+    color: #F1F9DD;
+    padding: 10% 7%;
+    border-radius: 25px;
+    max-height: 312px;
+}
+
+.cardsr:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
 }
 
 /*-Explorar-*/
@@ -208,13 +314,14 @@ main article {
 footer{
     display: flex;
     flex-direction: column;
-    background-color: darkorchid;
+    background-color: #060011;
     padding: 5px 5%;
 }
 
 footer section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: darkseagreen;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #F1F9DD;
 }
