@@ -175,7 +175,7 @@ main{
     flex-direction: column;
     background-color: #F1F9DD;
     margin: 0px;
-    padding: 46px 13%;
+    padding: 46px 10%;
 }
 
 main article {
@@ -294,7 +294,6 @@ main article {
 /*-Explorar-*/
 
 .mainEXP-section {
-    background-color: bisque;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -302,9 +301,80 @@ main article {
     row-gap: 10px;
 }
 
+.produtos-r{
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+}
+
 .produto {
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fdfff7;
+    border-radius: 15px;
+    min-width: 220px;
+    max-width: 22%;
     padding: 10px;
+    border: 1px solid #cbcbd7;
+    justify-content: space-between;
+}
+
+.produto:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.produto a {
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #72b900;
+    color: #0C0020;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+
+.produto a:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    background-color: #c3ff87;
+}
+
+.foto-produto{
+    width: 100%;
+    max-height: 70%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.foto-produto img{
+width: 100%;
+object-fit: cover;
+border-radius: 15px;
+}
+
+.vermais{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #d3ffa6;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #cbcbd7;
+}
+
+.vermais a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #0C0020;
+}
+
+.vermais:hover {
+    transition: 0.5s;
+    transform: scale(1.005);
+    background-color: #b8d39c;
 }
 
 /*--FOOTER--*/
